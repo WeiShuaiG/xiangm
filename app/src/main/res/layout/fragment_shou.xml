@@ -1,0 +1,158 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false">
+
+
+            <ImageView
+                android:id="@+id/shou_img_fen"
+                android:layout_width="@dimen/dp_24"
+                android:layout_height="@dimen/dp_24"
+                android:padding="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_36"
+                android:layout_marginLeft="@dimen/dp_24"
+                android:layout_gravity="center_vertical"
+                android:background="@mipmap/common_nav_btn_menu_n_hdpi"
+                />
+
+
+
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/shou_img_vp"
+            android:layout_below="@id/shou_img_fen"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:layout_marginRight="@dimen/dp_30"
+            android:clipChildren="false"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_150"/>
+
+        <RelativeLayout
+            android:id="@+id/ren"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shou_img_vp"
+            android:layout_marginTop="@dimen/dp_20">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/rx" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="热销新品"
+                android:textColor="#ea952d"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="@dimen/dp_24"
+                android:layout_height="@dimen/dp_12"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_24"
+                android:src="@mipmap/common_btn_more_yellow_n" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recy_shouye_rexiao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ren" />
+
+        <RelativeLayout
+            android:id="@+id/lin7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_below="@id/recy_shouye_rexiao">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:background="@drawable/pz" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="魔丽时尚"
+                android:textColor="#115cdf"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="@dimen/dp_24"
+                android:layout_height="@dimen/dp_12"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_24"
+                android:src="@mipmap/home_btn_more_purple_n" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recy_shouye_shishang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lin7" />
+
+        <RelativeLayout
+            android:id="@+id/pinzhi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recy_shouye_shishang"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:background="@mipmap/bitmap111" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="品质生活"
+                android:textColor="#115cdf"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="@dimen/dp_24"
+                android:layout_height="@dimen/dp_12"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_24"
+                android:src="@mipmap/home_btn_moer_pink_n" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recy_shouye_shenghuo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pinzhi" />
+        <ImageView
+            android:id="@+id/shou_img_sou"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_marginTop="@dimen/dp_36"
+            android:padding="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_24"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/common_nav_btn_search_n" />
+    </RelativeLayout>
+</ScrollView>
